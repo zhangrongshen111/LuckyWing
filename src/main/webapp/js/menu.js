@@ -40,7 +40,7 @@ $('.topMenu >li').hover(function(event){
 $('.downMenu li').click(function(event){
     event.stopPropagation();//阻止事件冒泡
     $('.downMenu li').css('background','transparent');
-    $(this).css({'background':'#209e91','color':'#fff'});
+    $(this).css({'color':'#fff'});
 });
 
 //    $('#menuList').hover(function(){
