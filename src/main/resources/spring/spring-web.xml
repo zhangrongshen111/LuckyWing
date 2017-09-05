@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                            http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+                            http://www.springframework.org/schema/context
+                            http://www.springframework.org/schema/context/spring-context-3.1.xsd
+                            http://www.springframework.org/schema/mvc
+                            http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
+    <!--配置springmvc-->
+    <!--1.开启mvc注解-->
+    <!--简化配置：
+       （1）自动注册DefaultAnnotationHandlerMapping，AnnotationMethodHandlerAdapter
+       （2）提供一系列：数据绑定，数组和日期的转化，xml和json默认读写支持
+   -->
+    <mvc:annotation-driven/>
+    <!--静态资源默认servlet配置-->
+    <!--加入对静态资源的处理   允许使用“/”做整体映射-->
+    <mvc:default-servlet-handler/>
+
+    <!--3.配置jsp显示viewResolve-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <!--返回jsp页面时路径的前缀-->
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <!--返回jsp页面时页面的后缀-->
+        <property name="suffix" value=".jsp"/>
+        <!--order属性指定当有多个ViewResolver的时候其处理视图的优先级  值越小优先级越高-->
+        <property name="order" value="1"/>
+    </bean>
+
+    <!--扫描web包-->
+    <context:component-scan base-package="cn.luckywing.controller"/>
+    <!--json转换器-->
+    <bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+        <property name="supportedMediaTypes">
+            <list>
+                <value>text/html;charset=UTF-8</value>
+            </list>
+        </property>
+    </bean>
+    <!--json映射处理-->
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                <!--json转换器-->
+                <ref bean="mappingJacksonHttpMessageConverter"/>
+            </list>
+        </property>
+    </bean>
+
+    <!--配置文件上传，没有上传功能可以不用配置-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+       <!--默认编码-->
+        <property name="defaultEncoding" value="utf-8"/>
+        <!--文件大小最大值-->
+        <property name="maxUploadSize" value="10485760000"/>
+        <!--内存中的最大值-->
+        <property name="maxInMemorySize" value="40960"/>
+
+    </bean>
+
+</beans>
