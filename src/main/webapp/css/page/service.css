@@ -1,0 +1,244 @@
+li{
+    list-style: none;
+}
+.textCenter{
+    text-align: center;
+}
+.titleIcon{
+    display:inline-block;
+    background:url("../../images/service/sprite.png") no-repeat;
+
+}
+.clickButton{
+    display:inline-block;
+    text-decoration: none;
+    text-align:center;
+    width:220px;
+    height:42px;
+    border-radius:2px;
+    letter-spacing:5px;
+    font-weight:bold;
+    background:#c1272c;
+    color:#fff;
+    margin:30px auto 0px;
+    line-height:42px;
+    border:1px solid #c0272d;
+    transition: all 0.5s ease-in-out;
+
+}
+a:hover{
+    background:transparent;
+    color:#c1272c;
+    text-decoration: none;
+}
+
+
+.tbody{
+    padding-top:70px;
+}
+.tbody .filghtService{
+    background:url("../../images/service/service.jpg") center no-repeat;
+    background-size:cover;
+    height:692px;
+    overflow:hidden;
+    color:#fff;
+    position:relative;
+}
+.tbody .filghtService .filghtServiceText{
+    position:absolute;
+    bottom:140px;
+    right:0px;
+    left:0px;
+}
+
+.tbody .freeConsoultation{
+    padding:144px 0px;
+}
+.tbody .freeConsoultation .textList{
+    margin:30px 0px;
+}
+.tbody .freeConsoultation div ul{
+    display:inline-block;
+    text-align: left;
+    color:#77787b;
+    margin-left:100px;
+    width:35%;
+}
+.tbody .freeConsoultation div ul li{
+    position:relative;
+    margin-top:15px;
+}
+.tbody .freeConsoultation div ul:first-child {
+    margin-bottom:0px;
+}
+.tbody .freeConsoultation div ul li .item {
+    position: absolute;
+    top: 3px;
+    left:-25px;
+    font-size: 12px;
+}
+@media (max-width: 768px) {
+    .tbody .freeConsoultation div ul{
+        width:100%;
+        padding:0px 10px 0px 35px ;
+        margin-left:0px;
+
+    }
+}
+
+.tbody .alternativeTechnology{
+    background:url("../../images/service/doing.jpg") center no-repeat;
+    background-size:cover;
+
+}
+.tbody .alternativeTechnology .alternativeTechnologyText{
+    padding: 95px 0 60px;
+    width: 48%;
+    margin: 0 auto;
+}
+.tbody .alternativeTechnology .alternativeTechnologyText span:nth-child(1){
+    height: 23px;
+    width: 36px;
+    background-position:0px 0px;
+}
+.tbody .alternativeTechnology .alternativeTechnologyText .spanTwo{
+    height: 29px;
+    width: 27px;
+    background-position:0px -29px;
+}
+.tbody .alternativeTechnology .alternativeTechnologyText h5,p{
+    font-size:15px;
+    color:#77787b;
+    line-height:25px;
+}
+.tbody .alternativeTechnology .alternativeTechnologyText h5{
+    margin:25px 0px 35px;
+}
+.tbody .alternativeTechnology .alternativeTechnologyText p{
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #d2d3d5;
+}
+
+@media (max-width: 999px) {
+    .tbody .alternativeTechnology .alternativeTechnologyText{
+        padding: 85px 0 60px;
+        width: 75%;
+    }
+}
+@media (max-width: 768px) {
+    .tbody .alternativeTechnology .alternativeTechnologyText{
+        padding: 85px 0 60px;
+        width: 90%;
+    }
+}
+
+.tbody .industryExperience{
+    background: #414042;
+    padding: 63px 0 30px;
+}
+.tbody .industryExperience .container .icon{
+    display:inline-block;
+    margin-bottom: 20px;
+    width: 52px;
+    height: 52px;
+    background:url("../images/sprite%20.png") 0px -196px no-repeat;
+}
+.tbody .industryExperience .container h3{
+    color:#f3f4f5;
+    /*width: 29%;*/
+    margin: 0 auto 20px;
+}
+.tbody .industryExperience .container p{
+    color: #a7a6a6;
+    margin: 0 auto 22px;
+    width: 59%;
+    font-size:15px;
+}
+.tbody .industryExperience .container .industryExperienceList{
+    margin-bottom:50px;
+}
+.tbody .industryExperience .container .industryExperienceList ul{
+    padding-left:0px;
+}
+.tbody .industryExperience .container .industryExperienceList ul li{
+    margin: 10px 70px 10px 0px;
+    display: inline-block;
+    font-size:18px;
+    color:#fff;
+}
+.tbody .industryExperience .container .industryExperienceList ul li:last-child{
+    margin-right:0px;
+}
+.tbody .industryExperience .container .industryExperienceList ul li span{
+    vertical-align:middle;
+    margin-right:10px;
+}
+.tbody .industryExperience .container .industryExperienceList ul li:nth-child(1) .titleIcon{
+    height: 33px;
+    width: 27px;
+    background-position: 0 -63px;
+}
+.tbody .industryExperience .container .industryExperienceList ul li:nth-child(2) .titleIcon{
+    height: 25px;
+    width: 28px;
+    background-position: 0 -95px;
+}
+.tbody .industryExperience .container .industryExperienceList ul li:nth-child(3) .titleIcon{
+    height: 33px;
+    width: 30px;
+    background-position: 0 -122px;
+}
+.tbody .industryExperience .container .industryExperienceList ul li:nth-child(4) .titleIcon{
+    height: 33px;
+    width: 29px;
+    background-position: 0 -160px;
+}
+.tbody .industryExperience .container .industryExperienceImg img{
+    width:100%;
+}
+.tbody .industryExperience .container .filghtService{
+    font-size:18px;
+    background:transparent;
+    color:dodgerblue;
+}
+
+@media (max-width: 999px) {
+    .tbody .industryExperience .container{
+        margin:0px;
+        padding:0px;
+        width:100%;
+
+    }
+    .tbody .industryExperience .container p{
+        width:90%;
+    }
+    .tbody .industryExperience .container .industryExperienceList ul li .titleIcon{
+        margin-right:0px;
+    }
+}
+@media (max-width: 768px) {
+    .tbody .industryExperience .container .industryExperienceList ul{
+        width:380px;
+        margin:0 auto;
+    }
+    .tbody .industryExperience .container .industryExperienceList ul li{
+        width:49%;
+        margin-top:30px;
+        margin-right:0px;
+    } .tbody .industryExperience .container .industryExperienceList ul li span:nth-child(2){
+        width:100%;
+        display:block;
+        margin-top:10px;
+    }
+}
+@media (max-width: 360px) {
+    .tbody .industryExperience .container .industryExperienceList ul{
+
+       width:100%
+    }
+    .tbody .industryExperience .container .industryExperienceList ul li{
+
+       width:100%
+    }
+}

@@ -1,0 +1,352 @@
+li{
+    list-style: none;
+}
+.textCenter{
+    text-align: center;
+}
+.titleIcon{
+    display:inline-block;
+    background:url("../../images/software/sprite.png") no-repeat;
+
+}
+.clickButton{
+    display:inline-block;
+    text-decoration: none;
+    text-align:center;
+    width:220px;
+    padding:11px 0px;
+    border-radius:2px;
+    margin:0px 10px;
+    letter-spacing:5px;
+    font-weight:bold;
+    transition: all 0.5s ease-in-out;
+
+}
+p{
+    line-height:25px;
+    color:#a7a6a6;
+}
+
+.ipadShow,.mobileShow{
+    display:none;
+}
+.ipadHide img{
+    width:100%;
+}
+ .ipadShow img{
+    width:100%;
+}
+.mobileShow img{
+    width:100%;
+}
+@media (max-width: 999px) {
+    .ipadHide{
+        display:none;
+    }
+    .ipadShow{
+        display:block;
+    }
+
+}
+@media (max-width: 768px) {
+    /*.ipadHide{*/
+        /*display:none;*/
+    /*}*/
+    .ipadShow{
+        display:none;
+    }
+    .mobileShow{
+        display:block;
+    }
+}
+
+
+.tbody{
+    padding-top:70px;
+}
+.tbody .heroSction{
+    background:url("../../images/software/inflight-hero.jpg") center center no-repeat;
+    background-size:cover;
+    height:690px;
+    line-height:690px;
+    color:#fff;
+    overflow:hidden;
+   /*display:table-cell;*/
+    /*vertical-align:middle;*/
+    /*width:100%;*/
+}
+.tbody .heroSction h1{
+    margin-top:25%;
+}
+@media (max-width: 768px) {
+    .tbody .heroSction h1{
+        margin-top:50%;
+    }
+}
+
+.tbody .realMonitoring{
+    background:url("../../images/software/real-time-monitoring.png") center center no-repeat;
+    background-size:cover;
+    padding:122px 0px 225px;
+    overflow:hidden;
+}
+.tbody .realMonitoring .realMonitoringText{
+    width:50%;
+    float:right;
+    padding-top:110px;
+}
+.tbody .realMonitoring .realMonitoringText .titleIcon{
+    width:50px;
+    height:60px;
+    background-position:0px -1172px;
+    margin-bottom:10px;
+}
+.tbody .realMonitoring .realMonitoringText h5{
+   font-size:24px;
+    margin-top:25px;
+}
+.tbody .realMonitoring .realMonitoringText p{
+   padding:5px 50px;
+    font-size:15px;
+    color:#77787b;
+}
+@media (max-width: 999px) {
+    .tbody .realMonitoring{
+        padding:0px;
+        background-image:none;
+    }
+    .tbody .realMonitoring .realMonitoringText{
+        width:100%;
+        padding:65px 10px 0px
+    }
+    .tbody .realMonitoring .realMonitoringText p{
+        padding:0;
+    }
+
+}
+
+
+.tbody .userInterface{
+    background: url("../../images/software/intuitive-user-interface-bg.jpg") top center no-repeat #262626;
+    padding: 293px 0 40px;
+}
+.tbody .userInterface p{
+    font-size:16px;
+}
+.tbody .userInterface .container{
+    overflow:hidden;
+}
+.tbody .userInterface .userInterfaceText{
+    width:50%;
+    float:left;
+    color:#fff;
+}
+.tbody .userInterface .userInterfaceText span{
+    width:47px;
+    height:47px;
+    background-position:0px -1245px;
+    margin-bottom:15px;
+}
+.tbody .userInterface .userInterfaceText p{
+    padding:0px 50px;
+    margin-top:30px;
+}
+.tbody .userInterface .userInterfaceList{
+    clear:both;
+    padding:385px 0px 0px;
+}
+.tbody .userInterface .userInterfaceList ul li{
+    width: 49%;
+    padding: 20px 55px 80px;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.tbody .userInterface .userInterfaceList ul h4{
+  color:#fff;
+    margin:15px 0px;
+}
+
+.tbody .userInterface .userInterfaceList ul li span{
+    display:inline-block;
+    width:60px;
+    height:57px;
+}
+.tbody .userInterface .userInterfaceList ul li:nth-child(1) span i{
+    width:45px;
+    height:42px;
+    background-position:0px -1302px;
+}
+.tbody .userInterface .userInterfaceList ul li:nth-child(2) span i{
+    width:40px;
+    height:40px;
+    background-position:0px -1357px;
+}
+.tbody .userInterface .userInterfaceList ul li:nth-child(3) span i{
+    width:42px;
+    height:42px;
+    background-position:0px -1408px;
+}
+.tbody .userInterface .userInterfaceList ul li:nth-child(4) span i{
+    width:42px;
+    height:32px;
+    background-position:0px -1465px;
+}
+.tbody .userInterface .userInterfaceCondition{
+    padding:8px 40px;
+    color: #727272;
+}
+@media (max-width: 999px) {
+    .tbody .userInterface .userInterfaceList ul li{
+        width:49%;
+        margin:0 auto;
+        padding:20px 27px 55px;
+    }
+    .tbody .userInterface .container{
+        width:100%;
+        padding:0px;
+        margin:0px;
+    }
+    .tbody .userInterface .userInterfaceList ul{
+        padding-left:0px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .tbody .userInterface{
+        background-image:none;
+        padding:70px 0px 8px
+    }
+
+    .tbody .userInterface .userInterfaceText{
+        width:100%;
+        padding:0px 10px;
+        float:none;
+        margin-bottom:35px;
+    }
+    .tbody .userInterface .userInterfaceText p{
+        padding:0px;
+    }
+    .tbody .userInterface .userInterfaceList{
+        padding:60px 0px 53px;
+    }
+    .tbody .userInterface .userInterfaceList ul li{
+        width:100%;
+        margin:0 auto;
+        padding:20px 12px;
+    }
+
+}
+
+
+.tbody .healthMonitor{
+    background:#212121;
+    padding-top:80px;
+    color:#fff;
+}
+.tbody .healthMonitor .healthMonitorText{
+    padding:0 20%;
+}
+.tbody .healthMonitor .healthMonitorText span{
+    width:52px;
+    height:52px;
+    background-position-y:-196px ;
+}
+.tbody .healthMonitor .healthMonitorText h3{
+    margin:30px 0px;
+}
+
+.tbody .healthMonitor .healthMonitorImg{
+    margin-top:-50px;
+}
+
+@media (max-width: 768px) {
+    .tbody .healthMonitor .healthMonitorText{
+        padding: 0px 12px;
+    }
+    .tbody .healthMonitor .healthMonitorImg{
+        margin-top:0px;
+    }
+}
+
+
+.tbody .uavRecovery{
+    padding-top:113px;
+
+}
+.tbody .uavRecovery p{
+    color:#77787b;
+}
+.tbody .uavRecovery .container .uavRecoveryText{
+     padding:0px 25%;
+ }
+.tbody .uavRecovery .container .uavRecoveryText h3{
+    margin:0 0 30px
+ }
+.tbody .uavRecovery .container .uavRecoveryList{
+     padding:65px 0px;
+  }
+.tbody .uavRecovery .container .uavRecoveryList li{
+    display: inline-block;
+    margin: 0 -3px;
+    width: 33.33%;
+    padding: 0 45px;
+    vertical-align: top;
+
+  }
+
+.tbody .uavRecovery .container .uavRecoveryList li .titleIcon{
+    vertical-align: middle;
+    margin-right:15px;
+}
+.tbody .uavRecovery .container .uavRecoveryList li:nth-child(1) .titleIcon{
+     width:30px;
+    height:30px;
+    background-position:0px -1508px;
+  }
+.tbody .uavRecovery .container .uavRecoveryList li:nth-child(2) .titleIcon{
+     width:30px;
+    height:30px;
+    background-position:-47px -1508px;
+  }
+.tbody .uavRecovery .container .uavRecoveryList li:nth-child(3) .titleIcon{
+     width:30px;
+    height:30px;
+    background-position:0px -1545px;
+  }
+
+.tbody .uavRecovery .container .clickButton{
+    background:#c1272c;
+    color:#fff;
+    border:1px solid #c1272c;
+}
+.tbody .uavRecovery .container .clickButton:hover{
+    background:transparent;
+    color:#c1272c;
+    text-decoration:none;
+}
+.tbody .uavRecovery .uavRecoveryImg{
+    margin-top:55px;
+}
+@media (max-width: 999px) {
+    .tbody .uavRecovery .container .uavRecoveryList li{
+       width:50%;
+    }
+    .tbody .uavRecovery .container .uavRecoveryList li:last-child{
+       margin-top:40px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .tbody .uavRecovery .container .uavRecoveryList li{
+        width:100%;
+        margin-top:40px;
+    }
+}
+@media (max-width: 300px) {
+    .tbody .uavRecovery .container .clickButton{
+        width:90%;
+    }
+}

@@ -1,0 +1,881 @@
+*{
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    padding:0px;
+}
+.row{
+    margin-left:0px;
+    margin-right:0px;
+}
+
+.ipadShow,.mobileShow{
+    display:none;
+}
+@media (max-width: 999px) {
+    .ipadShow{
+        display:block;
+    }
+}
+@media (max-width: 768px) {
+    .ipadShow{
+        display:none;
+    }
+    .mobileShow{
+        display: block;
+    }
+}
+
+
+
+
+
+
+/*------------------*/
+.tbody{
+    padding-top:70px;
+}
+.tbody .presentamos{
+    height:692px;
+    background:url("../../images/lancaster/uav-hero.jpg") center center no-repeat;
+    color:#fff;
+    overflow:hidden;
+    text-align:center;
+    background-size:cover;
+    width:100%;
+}
+.tbody .presentamos .text{
+    margin-top:200px;
+
+}
+
+@media (max-width:999px){
+    .tbody .presentamos .text{
+        margin:190px auto 0px;
+    }
+}
+
+.tbody .presentamos div{
+    margin:22% auto 0px;
+
+}
+
+
+.tbody .creado{
+    background:url("../../images/lancaster/built-for-field.png") center center no-repeat;
+    background-size:cover;
+    padding:150px 0px 140px;
+}
+
+
+.creado .creado-title{
+    text-align:center;
+    /*margin:0 auto;*/
+    width:39%;
+}
+.creado .creado-title p{
+    color:#77787b;
+    font-size:15px;
+    margin-top:20px;
+    line-height:30px;
+}
+.creado .creado-title .iconSpan{
+    width:48px;
+    height:48px;
+}
+.icon{
+    display:inline-block;
+    background:url("../../images/lancaster/sprite.png") 2px -1590px no-repeat;
+    margin:0 auto;
+}
+.creado .creado-title ul{
+    text-align:left;
+    padding-left:50px;
+
+}
+.creado .creado-title li{
+    margin-top:10px;
+    padding-left:20px;
+    font-size:20px;
+    position:relative;
+}
+.creado .creado-title li span{
+    /*padding-right:10px;*/
+    color:gray;
+    font-size:14px;
+    position:absolute;
+    top:6px;
+    left:0px;
+}
+.creado .creado-img{
+    width:65%;
+    margin:50px auto 0;
+}
+.creado .creado-img img{
+    width:100%;
+}
+@media (max-width: 999px) {
+    .tbody .creado{
+        background-image: none;
+    }
+    .creado .creado-title{
+        width:90%;
+        margin:0 auto;
+    }
+    .creado .creado-title li{
+        display:inline-block;
+        width:49%;
+        vertical-align: top;
+    }
+}
+@media (max-width: 768px) {
+    .tbody .creado{
+        padding:50px 0;
+    }
+}
+
+.tbody .vuelo{
+
+    overflow:hidden;
+    background:url("../../images/lancaster/fly-smarter.jpg") #404042 center top no-repeat;
+    background-size: cover;
+}
+.tbody .vuelo .vuelo-img{
+    display:none;
+}
+.tbody .vuelo .vuelo-title{
+    width:39%;
+    margin:180px 40px;
+    float:right;
+    text-align:center;
+    color:#fff;
+}
+
+.tbody .vuelo .vuelo-title span{
+    width:52px;
+    height:52px;
+    background-position-y:-195px;
+}
+.tbody .vuelo .vuelo-title p{
+    color:lightgray;
+    margin:15px 0px 60px;;
+}
+
+@media (max-width: 768px){
+    .tbody .vuelo{
+        background-image: none;
+    }
+    .tbody .vuelo .vuelo-title{
+        width:100%;
+        margin-left:0px;
+        margin-right:0px;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .tbody .vuelo .vuelo-img{
+        display:block;
+    }
+    .tbody .vuelo .vuelo-title p{
+        width:90%;
+        margin:15px auto 60px;
+    }
+}
+@media  (max-width: 380px) {
+    .tbody .vuelo .vuelo-title a{
+        width:80%;
+    }
+}
+.clickBtn{
+    display:inline-block;
+    width:290px;
+    height:44px;
+    line-height:44px;
+    text-align: center;
+    background:#c0272d;
+    border:1px solid #c0272d;
+    border-radius:2px;
+    color:#fff;
+    margin:0 auto;
+    transition: background .5s ease-in;
+    transition: color .4s ease-in;
+
+}
+.clickBtn:hover{
+    background:transparent;
+    color:#c0272d;
+    text-decoration: none;
+}
+
+.tbody .dataConllection{
+    background:url("../../images/lancaster/cutting-edge.png") center center no-repeat;
+    background-size:cover;
+    padding:230px 0px 125px;
+}
+.tbody .dataConllection .row img{
+    padding:0px;
+}
+
+.tbody .dataConllection .introduce-title{
+    width:39%;
+    margin-bottom:20px;
+    text-align:center;
+}
+.tbody .dataConllection .introduce-title .icon{
+    width:52px;
+    height:54px;
+    background-position-y:-1655px;
+}
+.tbody .dataConllection .introduce-title p{
+    color:gray;
+    line-height:30px;
+}
+.tbody .dataConllection .row{
+    display:none;
+}
+
+@media (max-width: 999px) {
+    .tbody .dataConllection {
+        background: url("../../images/lancaster/cutting-edge-tab.png") right center no-repeat;
+        background-size: contain;
+        padding: 90px 0 40px;
+
+    }
+
+    .tbody .dataConllection .introduce-list ul{
+        width:67%;
+        text-align:center;
+    }
+    .tbody .dataConllection .introduce-title{
+        width:47%;
+    }
+    .tbody .sensorList ul{
+        width:94%;
+    }
+
+}
+.tbody .dataConllection .introduce-list{
+    display:block;
+}
+.tbody .dataConllection .introduce-list ul li{
+    display:inline-block;
+    font-size:18px;
+    color:#122b40;
+    margin:20px 18px 0px 0px;
+}
+.tbody .dataConllection .introduce-list ul li span{
+    display: inline-block;
+    margin-right:8px;
+}
+.tbody .dataConllection .introduce-img{
+    display:none;
+    margin-top:50px;
+}
+@media (max-width: 768px) {
+    .tbody .dataConllection{
+        background:none;
+    }
+    .tbody .dataConllection .introduce-title{
+        width:93%;
+    }
+    .tbody .dataConllection .introduce-list ul{
+        width:60%;
+        margin:0 auto;
+    }
+    .tbody .dataConllection .introduce-list ul li{
+        width:100%;
+        text-align:left;
+        color:gray;
+    }
+    .tbody .dataConllection .introduce-img{
+        display:block;
+    }
+
+}
+
+.tbody .sensorList{
+    /*overflow:hidden;*/
+    padding:50px 0px 240px;
+    position:relative;
+
+}
+@media (max-width: 1200px) {
+    .tbody .sensorList .container{
+        width:100%;
+        padding:0px 10px;
+    }
+}
+
+.tbody .sensorList .imgList{
+    margin:0px auto;
+    text-align:center;
+
+}
+.tbody .sensorList .imgList li{
+    display:inline-block;
+    position:relative;
+    width:20%;
+    text-align:center;
+    padding:0px 8px;
+    margin:0px -2px;
+}
+@media (max-width: 999px) {
+    .tbody .sensorList .imgList li{
+        /*display:inline-block;*/
+        /*position:relative;*/
+        width:33%;
+        margin-bottom:15px;
+        /*text-align:center;*/
+
+        /*padding:0px 8px;*/
+        /*margin:0px -2px;*/
+    }
+}
+.tbody .sensorList .imgList li img{
+    width:100%;
+}
+.tbody .sensorList .imgList li div{
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:28%;
+    color:#fff;
+}
+
+
+.tbody .sensorList .imgList li div .iconClick{
+    display:inline-block;
+    width:31px;
+    height:31px;
+    background:url("../../images/lancaster/sprite.png") -62px -1802px no-repeat;
+    /*1842px*/
+}
+
+.tbody .sensorList .sensorDetail .detailItem{
+    display:none;
+}
+
+.tbody .sensorList .sensorDetail{
+    width:100%;
+    position:absolute;
+    /*border:1px solid red;*/
+    background:#f6f6f6;
+    color:#000;
+    top:193px;
+    left:0px;
+    /*bottom: 0px;*/
+    padding:0px 2%;
+}
+@media (max-width: 992px) {
+    .tbody .sensorList .sensorDetail{
+        top:63%;
+    }
+}
+@media (max-width: 760px) {
+    .tbody .sensorList .imgList li{
+        width:235px;
+        margin-bottom:25px;
+    }
+    .tbody .sensorList .sensorDetail{
+        top:67%;
+    }
+}
+@media (max-width: 530px) {
+    .tbody .sensorList .imgList li{
+        width:70%;
+    }
+    .tbody .sensorList .sensorDetail{
+        top:82%;
+    }
+}
+@media (max-width: 380px) {
+    .tbody .sensorList .sensorDetail .detailItem .item{
+        width:90%;
+        text-align: center;
+    }
+    .tbody .sensorList .sensorDetail .detailItem .clickDiv{
+        /*float:left;*/
+        /*overflow:hidden;*/
+        width:92%;
+        margin:0 auto;
+        text-align:center;
+    }
+    .tbody .sensorList .sensorDetail .detailItem .clickDiv .clickBtn{
+        /*margin:15px 0px;*/
+        width:100%;
+    }
+    .tbody .sensorList .imgList li{
+        width:92%;
+    }
+}
+
+.tbody .sensorList .sensorDetail .detailItem{
+    overflow:hidden;
+    /*border:1px solid red;*/
+    /*width:1170px;*/
+    padding:65px 0px 20px;
+    margin:0 auto;
+    position:relative;
+    text-align: left;
+}
+
+.tbody .sensorList .sensorDetail .detailItem .item ul li{
+    margin:6px 0;
+    position:relative;
+}
+.tbody .sensorList .sensorDetail .detailItem .item:first-child h3{
+    color:#77787b;
+}
+.tbody .sensorList .sensorDetail .detailItem .item .grayColor{
+    color:#77787b;
+}
+.tbody .sensorList .sensorDetail .detailItem .item .textIndent li{
+    padding-left:20px;
+}
+.tbody .sensorList .sensorDetail .detailItem .item .textIndent span{
+    position:absolute;
+    top:2px;
+    left:0;
+    font-size:4px;
+}
+.tbody .sensorList .sensorDetail .detailItem .clickClose{
+    position:absolute;
+    top:15px;
+    right:7px;
+    color:#000;
+}
+.tbody .sensorList .sensorDetail .detailItem .clickDiv{
+    float:left;
+    overflow:hidden;
+}
+.tbody .sensorList .sensorDetail .detailItem .clickDiv .clickBtn{
+    margin:15px 0px;
+}
+.tbody .sensorList .sensorDetail .detailItem .clickDiv p{
+    color:#a3a3a3;
+}
+.tbody .sensorList .sensorDetail .detailItem .clickDiv p a{
+    color:#c1272c;
+    text-decoration:underline;
+}
+
+.tbody .technical{
+    overflow:hidden;
+    height:auto;
+    background:#414042;
+    padding-top:65px;
+    color:#fff;
+    text-align:center;
+}
+.tbody .technical .container .icon{
+    width:52px;
+    height:52px;
+    background-position-y: -195px;
+
+}
+.tbody .technical .container h3{
+    width:400px;
+    text-align:center;
+    margin:15px auto 50px;
+}
+.tbody .technical .container .specsListOne{
+    width:45%;
+    float:left;
+}
+
+.tbody .technical .container ul{
+    width:50%;
+    float:left;
+    text-align:left;
+    padding:0 5px;
+
+}
+
+.tbody .technical .container ul li{
+    margin-bottom:25px;
+}
+.tbody .technical .container ul li .specsTitle{
+    color:lightgray;
+    margin-bottom:5px;
+}
+.tbody .technical .container ul li .pdfLink{
+    color:lightgray;
+    text-decoration:none;
+}
+.tbody .technical .container .specsListTwo{
+    width:45%;
+    float:right;
+}
+
+.tbody .technical .technicalSpecsImg{
+    /*margin-top:-90px;*/
+}
+.tbody .technical .technicalSpecsImg .computerShow{
+    width:80%;
+    margin:0px auto;
+}
+.tbody .technical .technicalSpecsImg .computerShow img{
+    width:100%;
+    margin-top:-50px;
+}
+
+@media (max-width: 986px) {
+
+    .tbody .technical .container .specsListOne{
+        padding-left:11%;
+
+    }
+    .tbody .technical .container .specsListTwo{
+        padding-left:11%;
+    }
+
+    .tbody .technical .container ul{
+        width:100%;
+    }
+    .tbody .technical .technicalSpecsImg .computerShow{
+        width:100%;
+        margin-top:100px;
+    }
+}
+@media (max-width: 380px) {
+    .tbody .technical .container .specsListOne{
+        width:100%;
+
+    }
+    .tbody .technical .container .specsListTwo{
+        width:100%;
+    }
+    .tbody .technical .container h3{
+        width:90%;
+    }
+    .tbody .technical .container ul{
+        width:100%;
+        text-align:center;
+    }
+}
+
+.tbody .training{
+    padding:70px 0px 50px;
+    text-align:center;
+}
+.tbody .training .container .icon{
+    width:52px;
+    height:52px;
+    background-position-y: -1720px;
+}
+.tbody .training .container .titleText{
+    width:600px;
+    margin:20px auto 60px;
+    color:gray;
+    font-size:16px;
+}
+
+.tbody .training .container ul{
+    /*text-align:center;*/
+    overflow:hidden;
+}
+.tbody .training .container ul li{
+    width:33.33%;
+    display:inline-block;
+    margin:0 -3px;
+    vertical-align:top;
+}
+.tbody .training .container ul li div{
+    width:160px;
+    height:160px;
+    line-height:196px;
+    border:1px solid #c8c8c8;
+    border-radius:50%;
+    margin:0 auto 30px;
+}
+.tbody .training .container ul li:nth-child(1) div .icon{
+    width:42px;
+    height:52px;
+    background-position-y: -1794px;
+}
+.tbody .training .container ul li:nth-child(2) div .icon{
+    width:50px;
+    height:50px;
+    background-position-y: -1855px;
+}
+.tbody .training .container ul li:nth-child(3) div .icon{
+    width:52px;
+    height:52px;
+    background-position-y: -1920px;
+}
+.tbody .training .container ul li p{
+    width:77%;
+    margin:20px auto 0px;
+    line-height:30px;
+    color:gray
+}
+.tbody .training .container ul li .option{
+    color:#212121;
+    letter-spacing: 1px;;
+}
+
+
+@media (max-width: 992px){
+    .tbody .training .container ul li{
+        width:50%;
+        margin:0 -3px;
+    }
+
+    .tbody .training .container ul li p{
+        width:95%;
+    }
+}
+@media (max-width: 768px) {
+    .tbody .training .container ul li{
+        width:100%;
+        margin-bottom:40px;
+    }
+    .tbody .training .container ul li p{
+        width:85%;
+    }
+}
+@media (max-width: 560px) {
+    .tbody .training .container .titleText{
+        width:90%;
+    }
+}
+
+.tbody .uavSoftWare{
+
+    background:url("../../images/lancaster/software-bg.jpg") center bottom no-repeat #212121;
+    background-size: cover;
+    color:#fff;
+}
+.tbody .uavSoftWare .heading{
+    padding:106px 0px;
+    text-align:center;
+;
+}
+.tbody .uavSoftWare .heading .icon{
+    width:58px;
+    height:58px;
+    background-position: 0px -1986px;
+}
+.tbody .uavSoftWare .heading p{
+    width:710px;
+    font-size:20px;
+    margin:20px auto 0px;
+
+}
+.tbody .uavSoftWare .mappingAnalysis .mappingWidth{
+    width:88%;
+    margin:0 auto;
+}
+.tbody .uavSoftWare .mappingAnalysis .mappingWidth div{
+    display:inline-block;
+}
+.tbody .uavSoftWare .mappingAnalysis .mappingAnalysisText{
+    width:45%;
+    padding-top:80px;
+}
+.tbody .uavSoftWare .mappingAnalysis .mappingAnalysisText p{
+    /*font-size:16px;*/
+    color:#afafaf;
+    margin:20px 0px 40px;
+}
+
+.tbody .uavSoftWare .mappingAnalysis .mappingAnalysisText ul li{
+    position:relative;
+    padding-left: 24px;
+    color:#afafaf;
+    font-size:14px;
+    line-height:30px;
+    margin-bottom:8px;
+}
+.tbody .uavSoftWare .mappingAnalysis .mappingAnalysisText ul li span{
+    position:absolute;
+    top:9px;
+    left:0px;
+    font-size:10px;
+}
+.tbody .uavSoftWare .mappingAnalysis .mappingAnalysisImg{
+    width:53%;
+    text-align:right;
+    vertical-align: top;
+
+}
+.tbody .uavSoftWare .mappingAnalysis .mappingAnalysisImg img{
+    width:80%;
+
+}
+
+
+.tbody .uavSoftWare .flightPlanning{
+    background:url("../../images/lancaster/flight-planning.png") center center no-repeat;
+    background-size: cover;
+    padding:225px 0px 350px;
+}
+.tbody .uavSoftWare .flightPlanning .container{
+    overflow:hidden;
+}
+.tbody .uavSoftWare .flightPlanning .flightPlanningText{
+    width:38%;
+    float:right;
+    text-align: center;
+}
+.tbody .uavSoftWare .flightPlanning .flightPlanningText p{
+    width:94%;
+    line-height:30px;
+    margin:20px auto 0px;
+    color:#afafaf;
+}
+.tbody .uavSoftWare .flightPlanning .flightPlanningImg{
+    display:none;
+}
+
+
+
+@media (max-width: 1200px) {
+    .tbody .uavSoftWare .mappingAnalysis .container{
+        margin:0px;
+        padding:0 10px;
+        width:100%;
+    }
+}
+
+@media (max-width: 999px) {
+    .tbody .uavSoftWare .heading p{
+        width:85%;
+    }
+    .tbody .uavSoftWare .mappingAnalysis .mappingWidth{
+        width:94%;
+    }
+    .tbody .uavSoftWare .mappingAnalysis .mappingAnalysisText{
+        padding:0px;
+    }
+    .tbody .uavSoftWare .flightPlanning{
+        background:url("../../images/lancaster/flight-planning-tab.png") left center no-repeat;
+        background-size: contain;
+        padding:180px 0px;
+    }
+
+}
+@media  (max-width:768px) {
+
+    .tbody .uavSoftWare .mappingAnalysis .mappingAnalysisText{;
+        width:100%;
+    }
+    .tbody .uavSoftWare .mappingAnalysis .mappingAnalysisImg{;
+        width:100%;
+        margin-top:50px;
+        text-align: center;
+    }
+
+    .tbody .uavSoftWare .flightPlanning{
+        background:none;
+        padding:50px 0px;
+    }
+    .tbody .uavSoftWare .flightPlanning .container{
+        width:100%;
+        padding:0px;
+        margin:0px;
+    }
+    .tbody .uavSoftWare .flightPlanning .flightPlanningText{
+        width:95%;
+        margin:0 auto;
+    }
+    .tbody .uavSoftWare .flightPlanning .flightPlanningImg{
+        display:block;
+        width:95%;
+        margin:0 auto;
+    }
+    .tbody .uavSoftWare .flightPlanning .flightPlanningImg img{
+        width:100%;
+    }
+
+}
+
+
+.tbody .uavSoftWare .trackingMonitoring{
+    background:url("../../images/lancaster/uav-tracking-monitoring.png") center center no-repeat;
+    background-size:cover;
+    padding:270px 0px 370px;
+}
+.tbody .uavSoftWare .trackingMonitoring .trackingMonitoringText{
+    width:38%;
+    text-align:center;
+}
+.tbody .uavSoftWare .trackingMonitoring .trackingMonitoringText p{
+    width:85%;
+    color:#afafaf;
+    margin:20px auto 0px;
+    line-height:30px;
+
+}
+.tbody .uavSoftWare .trackingMonitoring .trackingMonitoringImg{
+    display:none;
+}
+
+@media (max-width: 999px) {
+    .tbody .uavSoftWare .trackingMonitoring{
+        background:url("../../images/lancaster/uav-tracking-monitoring-tab.png") center center no-repeat;
+        background-size:contain;
+    }
+}
+@media (max-width: 768px) {
+    .tbody .uavSoftWare .trackingMonitoring{
+        background:none;
+        padding:0px;
+    }
+    .tbody .uavSoftWare .trackingMonitoring .trackingMonitoringText{
+        width:90%;
+        margin:0 auto;
+        text-align:center;
+    }
+    .tbody .uavSoftWare .trackingMonitoring .trackingMonitoringText p{
+        width:95%;
+    }
+    .tbody .uavSoftWare .trackingMonitoring .trackingMonitoringImg{
+        display:block;
+    }
+    .tbody .uavSoftWare .trackingMonitoring .trackingMonitoringImg img{
+        width:100%;
+    }
+}
+
+.tbody .uavPriceInfo{
+    background:url("../../images/lancaster/uav-price-bg.jpg") center center no-repeat;
+    background-size:cover;
+    padding:132px 0px 120px;
+    text-align:center;
+}
+.tbody .uavPriceInfo .icon{
+    width:52px;
+    height:52px;
+    margin-right:25px;
+    vertical-align: middle;
+    background-position-y:-2058px;
+}
+.tbody .uavPriceInfo span{
+    font-size:20px;
+    font-weight:bold;
+    margin-right:60px;
+}
+@media (max-width: 999px) {
+    .tbody .uavPriceInfo .clickBtn{
+        display:block;
+        width:230px;
+        margin:25px auto 0px;
+        letter-spacing: 1px;
+    }
+}
+@media (max-width: 768px) {
+    .tbody .uavPriceInfo .icon{
+        display:block;
+        margin:0 auto 5px;
+    }
+    .tbody .uavPriceInfo span{
+        margin-right:0px;
+    }
+}
+
+.tfoot{
+    /*height:100px;*/
+}

@@ -1,0 +1,73 @@
+.border-left {
+    float: left;
+    position: relative;
+    display: inline-block;
+    width: 650px;
+    height:400px;
+    border:0.5px solid #9d9d9d;
+    border-radius: 10px;
+}
+.border-right {
+    float: right;
+    position: relative;
+    display: inline-block;
+    width: 650px;
+    height:400px;
+    border:1px solid #9d9d9d;
+    border-radius: 10px;
+}
+.boxed {
+    margin: 20px 0px 20px 0px;
+}
+/*仪表盘界面*/
+.group1 .list {
+    margin: 0 5px;
+    padding-top: 10px;
+    position: relative;
+    min-height: 200px;
+}
+.group2 .list {
+    margin: 0 5px;
+    padding-top: 10px;
+    position: relative;
+    min-height: 300px;
+}
+.group1 .list-li {
+    width: 242px;
+    height: 190px;
+    float: left;
+    list-style: none;
+}
+.group2 .list-li {
+    width: 278px;
+    height: 300px;
+    float: left;
+    list-style: none;
+}
+.list-li P {
+    margin: 20px 0px 10px 70px;
+}
+.list-li h1 {
+    padding: 10px 0px 0 90px;
+}
+
+.border {
+    float: left;
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+@media screen and (max-width:1420px) {
+    /*.boxed {*/
+        /*!*margin: 10px 45px 10px 40px;*!*/
+    /*}*/
+/*.border-left {*/
+    /*width: 550px;*/
+/*}*/
+/*.border-right {*/
+    /*width: 550px;*/
+/*}*/
+}

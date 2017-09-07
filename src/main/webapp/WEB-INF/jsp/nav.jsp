@@ -1,202 +1,55 @@
+<%--&lt;%&ndash;--%>
+  <%--Created by IntelliJ IDEA.--%>
+  <%--User: ZRS--%>
+  <%--Date: 2017/9/6--%>
+  <%--Time: 14:37--%>
+  <%--To change this template use File | Settings | File Templates.--%>
+<%--&ndash;%&gt;--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <%--<title>天钦爱翼</title>--%>
-    <%--<link rel="stylesheet" href="/css/bootstrap.min.css"/>--%>
-    <%--<link rel="stylesheet" type="text/css" href="/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />--%>
-    <%--<link rel="stylesheet" type="text/css" href="/css/normalize.css" />--%>
-    <%--<link rel="stylesheet" href="/css/nav.css"/>--%>
-    <%--<link rel="stylesheet" type="text/css" href="/css/menu_elastic.css" />--%>
-    <%--<link rel="stylesheet" type="text/css" href="/css/index.css" />--%>
-    <%--<script src="/js/snap.svg-min.js"></script>--%>
-    <!--[if IE]>
-    <!--<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
-    <![endif]-->
-</head>
-<body>
-<%--<div class="wrapper">--%>
-    <div id="nav">
-        <div class="nav-left inlineBlock">
-            <a href="#"><span>Lucky</span>Wing</a>
-            <div class="search inlineBlock">
-                <span class="glyphicon glyphicon-search"></span>
-                <input type="text" placeholder="搜索"/>
-            </div>
+<%--<html>--%>
+<%--<head lang="en">--%>
+    <%--<meta charset="UTF-8">--%>
+    <%--<meta name="viewport" content="width=device-width,initial-scale=1.0">--%>
+    <%--<title>nav</title>--%>
+    <%--&lt;%&ndash;<link rel="stylesheet" href="css/bootstrap.min.css"/>&ndash;%&gt;--%>
+    <%--&lt;%&ndash;<link rel="stylesheet" href="css/nav.css"/>&ndash;%&gt;--%>
+<%--</head>--%>
+<%--<body>--%>
+<%--<div class="thead">--%>
+    <div class="header-inner">
+        <div class="menuIcon glyphicon glyphicon-th-list"></div>
+        <div class="logo">
+            <a href="${pageContext.request.contextPath}/index.jsp">
+                <img src="${pageContext.request.contextPath}/images/03.png" alt="">
+            </a>
         </div>
-        <div class="nav-right inlineBlock textCenter">
-            <p class="inlineBlock">有问题？<a href="#">联系我们</a></p>
-            <div class="bell inlineBlock">
-                <span class="number">5</span>
-                <span class="glyphicon glyphicon-bell"></span>
-            </div>
-            <div class="envelope inlineBlock">
-                <span class="number">5</span>
-                <span class="glyphicon glyphicon-envelope"></span>
-            </div>
-            <div class="personalImage">
-                <a href="login.html"> <img src="/image/2.png" alt="" width="100%" height="100%"/></a>
-            </div>
+        <div class="menuList">
+            <ul>
+                <li><a href="${pageContext.request.contextPath}/redirect/toSoftware">无人机</a></li>
+                <li><a href="${pageContext.request.contextPath}/redirect/toSoftware">软件</a></li>
+                <li><a href="${pageContext.request.contextPath}/redirect/toAnalytics">数据分析</a></li>
+                <li><a href="${pageContext.request.contextPath}/redirect/toData">精准农林</a></li>
+                <%--<li><a href="${pageContext.request.contextPath}industries.jsp">行业</a></li>--%>
+                <li><a href="${pageContext.request.contextPath}/redirect/toPAAF">图像识别</a></li>
+                <li><a href="${pageContext.request.contextPath}/redirect/toLogin">登陆</a></li>
+                <li><a href="${pageContext.request.contextPath}/redirect/toContact">联系</a></li>
+            </ul>
+        </div>
+        <div class="ipadMenuList" style="overflow: hidden;">
+            <ul>
+                <li><a href="${pageContext.request.contextPath}/redirect/toLancaster">无人机</a></li>
+                <li><a href="${pageContext.request.contextPath}/redirect/toSoftware">软件</a></li>
+                <li><a href="${pageContext.request.contextPath}/redirect/toAnalytics">数据分析</a></li>
+                <li><a href="${pageContext.request.contextPath}/redirect/toData">精准农林</a></li>
+                <%--<li><a href="industries.jsp">行业</a></li>--%>
+                <li><a href="${pageContext.request.contextPath}/redirect/toPAAF">图像识别</a></li>
+                <li><a href="${pageContext.request.contextPath}/redirect/toLogin">登陆</a></li>
+                <li><a href="${pageContext.request.contextPath}/redirect/toContact">联系</a></li>
+            </ul>
         </div>
     </div>
-    <div class="menu-wrap">
-        <nav class="gn-menu-wrapper thead">
-            <div id="menuList">
-                <ul class="gn-menu topMenu">
-                    <div class="targetIcon"></div>
-                    <li class="topItem open">
-                        <a href="#"class="top">
-                            <span class="listIcon glyphicon glyphicon-home"></span>
-                            <span>个人首页</span>
-                            <span class="bottomIcon glyphicon glyphicon-chevron-down"></span>
-                        </a>
-                        <ul class="downMenu">
-                            <%--onclick="test()"--%>
-                            <li class="downItem"><a href="/index.jsp" >我的首页</a></li>
-                            <li class="downItem">
-                                <%--<a href="${pageContext.request.contextPath}/flightPlan/show" >飞行计划</a>--%>
-                                    <a href="${pageContext.request.contextPath}/flightPlan/show" class="flightPlan">飞行计划</a>
-                            </li>
-                            <li class="downItem"><a href="${pageContext.request.contextPath}/space/showMap">空域管理</a></li>
-                            <li class="downItem"><a href="#">信誉积分</a></li>
-                        </ul>
-                    </li>
-                    <li class="topItem open">
-                        <a href="#" class="top">
-                            <span class="listIcon glyphicon glyphicon-plane"></span>
-                            <span>飞行计划</span>
-                            <span class="bottomIcon glyphicon glyphicon-chevron-down"></span>
-                        </a>
-                        <ul class="downMenu">
-                            <li class="downItem"><a href="#">我的任务</a></li>
-                            <li class="downItem"><a href="#">我的飞机</a></li>
-                            <li class="downItem"><a href="#">我的余额</a></li>
-                            <li class="downItem"><a href="#">信誉积分</a></li>
-                        </ul>
-                    </li>
-                    <li class="topItem open">
-                        <a href="#" class="top">
-                            <span class="listIcon glyphicon glyphicon-plane"></span>
-                            <span>无人飞机</span>
-                            <span class="bottomIcon glyphicon glyphicon-chevron-down"></span>
-                        </a>
-                        <ul class="downMenu">
-                            <li class="downItem"><a href="#">我的任务</a></li>
-                            <li class="downItem"><a href="#">我的飞机</a></li>
-                            <li class="downItem"><a href="#">我的余额</a></li>
-                            <li class="downItem"><a href="#">信誉积分</a></li>
-                        </ul>
-                    </li>
-                    <li class="topItem open">
-                        <a href="#"class="top">
-                            <span class="listIcon glyphicon glyphicon-plane"></span>
-                            <span>空域信息</span>
-                            <span class="bottomIcon glyphicon glyphicon-chevron-down"></span>
-                        </a>
-                        <ul class="downMenu">
-                            <li class="downItem"><a href="#">我的任务</a></li>
-                            <li class="downItem"><a href="#">我的飞机</a></li>
-                            <li class="downItem"><a href="#">我的余额</a></li>
-                            <li class="downItem"><a href="#">信誉积分</a></li>
-                        </ul>
-                    </li>
-                    <li class="topItem open">
-                        <a href="#"class="top">
-                            <span class="listIcon glyphicon glyphicon-plane"></span>
-                            <span>交通规章</span>
-                            <span class="bottomIcon glyphicon glyphicon-chevron-down"></span>
-                        </a>
-                        <ul class="downMenu">
-                            <li class="downItem"><a href="#">我的任务</a></li>
-                            <li class="downItem"><a href="#">我的飞机</a></li>
-                            <li class="downItem"><a href="#">我的余额</a></li>
-                            <li class="downItem"><a href="#">信誉积分</a></li>
-                        </ul>
-                    </li>
-                    <li class="topItem open ">
-                        <a href="#"class="top">
-                            <span class="listIcon glyphicon glyphicon-plane"></span>
-                            <span>飞行情报</span>
-                            <span class="bottomIcon glyphicon glyphicon-chevron-down"></span>
-                        </a>
-                        <ul class="downMenu">
-                            <li class="downItem"><a href="#">我的任务</a></li>
-                            <li class="downItem"><a href="#">我的飞机</a></li>
-                            <li class="downItem"><a href="#">我的余额</a></li>
-                            <li class="downItem"><a href="#">信誉积分</a></li>
-                        </ul>
-                    </li>
-                    <li class="topItem open">
-                        <a href="#"class="top">
-                            <span class="listIcon glyphicon glyphicon-plane"></span>
-                            <span>航空情报</span>
-                            <span class="bottomIcon glyphicon glyphicon-chevron-down"></span>
-                        </a>
-                        <ul class="downMenu">
-                            <li class="downItem"><a href="#">我的任务</a></li>
-                            <li class="downItem"><a href="#">我的飞机</a></li>
-                            <li class="downItem"><a href="#">我的余额</a></li>
-                            <li class="downItem"><a href="#">信誉积分</a></li>
-                        </ul>
-                    </li>
-                    <li class="topItem open">
-                        <a href="#"class="top">
-                            <span class="listIcon glyphicon glyphicon-plane"></span>
-                            <span>气象情报</span>
-                            <span class="bottomIcon glyphicon glyphicon-chevron-down"></span>
-                        </a>
-                        <ul class="downMenu">
-                            <li class="downItem"><a href="#">我的任务</a></li>
-                            <li class="downItem"><a href="#">我的飞机</a></li>
-                            <li class="downItem"><a href="#">我的余额</a></li>
-                            <li class="downItem"><a href="#">信誉积分</a></li>
-                        </ul>
-                    </li>
-                    <li class="topItem open">
-                        <a href="#"class="top">
-                            <span class="listIcon glyphicon glyphicon-plane"></span>
-                            <span>告警救援</span>
-                            <span class="bottomIcon glyphicon glyphicon-chevron-down"></span>
-                        </a>
-                        <ul class="downMenu">
-                            <li class="downItem"><a href="#">我的任务</a></li>
-                            <li class="downItem"><a href="#">我的飞机</a></li>
-                            <li class="downItem"><a href="#">我的余额</a></li>
-                            <li class="downItem"><a href="#">信誉积分</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div><!-- /gn-scroller -->
-        </nav>
-        <!--<button class="close-button" id="close-button"></button>-->
-        <div class="morph-shape" id="morph-shape" data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 180 700" preserveAspectRatio="none">
-                <path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,180,700,100,800H-1V0z"/>
-            </svg>
-        </div>
-    </div>
-    <button class="menu-button" id="open-button"></button>
-
 <%--</div>--%>
-<!-- /container -->
-<%--<script type="text/javascript" src="/js/bootstrap.min.js"></script>--%>
-<%--<script src="/js/jquery-1.8.3.min.js"></script>--%>
-<%--<script src="/js/classie.js" type="text/javascript" language="javascript"></script>--%>
-<%--<script src="/js/toggleMenu.js" type="text/javascript" language="javascript"></script>--%>
-<%--<script src="/js/menu.js" type="text/javascript" language="javascript"></script>--%>
-<%--<script>--%>
-    <%--$(document).ready(function(){--%>
-
-        <%--$('.menu-button').toggle(function(){--%>
-            <%--$('.content').css('width','85%');--%>
-        <%--},function(){--%>
-            <%--$('.content').css('width','100%');--%>
-        <%--});--%>
-    <%--});--%>
-<%--</script>--%>
-</body>
-</html>
+<%--</body>--%>
+<%--&lt;%&ndash;<script src="js/jquery-1.8.3.min.js"></script>&ndash;%&gt;--%>
+<%--&lt;%&ndash;<script src="js/nav.js"></script>&ndash;%&gt;--%>
+<%--</html>--%>

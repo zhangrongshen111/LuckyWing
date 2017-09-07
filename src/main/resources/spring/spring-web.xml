@@ -9,6 +9,7 @@
                             http://www.springframework.org/schema/context/spring-context-3.1.xsd
                             http://www.springframework.org/schema/mvc
                             http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
+
     <!--配置springmvc-->
     <!--1.开启mvc注解-->
     <!--简化配置：
@@ -28,19 +29,13 @@
         <!--返回jsp页面时页面的后缀-->
         <property name="suffix" value=".jsp"/>
         <!--order属性指定当有多个ViewResolver的时候其处理视图的优先级  值越小优先级越高-->
-        <property name="order" value="1"/>
+        <property name="order" value="0"/>
     </bean>
+
 
     <!--扫描web包-->
     <context:component-scan base-package="cn.luckywing.controller"/>
-    <!--json转换器-->
-    <bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
-        <property name="supportedMediaTypes">
-            <list>
-                <value>text/html;charset=UTF-8</value>
-            </list>
-        </property>
-    </bean>
+
     <!--json映射处理-->
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
         <property name="messageConverters">
@@ -50,16 +45,13 @@
             </list>
         </property>
     </bean>
-
-    <!--配置文件上传，没有上传功能可以不用配置-->
-    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-       <!--默认编码-->
-        <property name="defaultEncoding" value="utf-8"/>
-        <!--文件大小最大值-->
-        <property name="maxUploadSize" value="10485760000"/>
-        <!--内存中的最大值-->
-        <property name="maxInMemorySize" value="40960"/>
-
+    <!--json转换器-->
+    <bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+        <property name="supportedMediaTypes">
+        <list>
+        <value>text/html;charset=UTF-8</value>
+        </list>
+        </property>
     </bean>
-
 </beans>
+

@@ -1,0 +1,145 @@
+.textCenter{
+    text-align: center;
+}
+
+
+
+.tbody{
+    padding-top:70px;
+}
+.tbody .logo{
+    max-height:600px;
+    background:url("../../images/contact/background.jpg") center center no-repeat;
+    background-size:cover;
+}
+.tbody .logo div{
+    width:95%;
+    margin:0 auto;
+}
+.tbody .logo div img{
+    width:100%;
+}
+
+.tbody .companyProfile{
+    padding:80px 0;
+}
+.tbody .companyProfile h1{
+    margin-bottom:50px;
+}
+.tbody .companyProfile .companyProfileText{
+    width:760px;
+    margin:0 auto 70px;
+
+}
+.tbody .companyProfile .companyProfileText h3{
+    margin-bottom:20px;
+}
+.tbody .companyProfile .companyProfileText p{
+   font-size:17px;
+    color:#747474;
+}
+
+
+
+@media (max-width: 1200px) {
+    .tbody .companyProfile .container{
+        width:100%;
+        padding:0px;
+        margin:0px;
+    }
+    .tbody .companyProfile .companyProfileText{
+        width:80%;
+    }
+}
+@media (max-width: 999px) {
+    .tbody .companyProfile .companyProfileText{
+        width:95%;
+    }
+}
+
+.tbody .companyConcept{
+    padding:60px 0;
+    background:#333;
+    color:#fff;
+}
+
+.tbody .companyConcept h2{
+    font-size:36px;
+    margin-bottom:40px;
+}
+.tbody .companyConcept dl{
+    text-align: left;
+    width:60%;
+    margin:0 auto 40px
+}
+.tbody .companyConcept dt{
+    font-size:22px;
+    color:#c1272c;
+}
+.tbody .companyConcept dd{
+    font-size:15px;
+    margin-top:20px;
+    padding-left:70px;
+    position:relative;
+    letter-spacing: 1px;
+}
+.tbody .companyConcept dd span{
+    color:gray;
+    position:absolute;
+    top:4px;
+    left:40px;
+}
+@media (max-width: 999px) {
+    .tbody .companyConcept dl{
+        width:80%;
+    }
+}
+@media (max-width: 768px) {
+    .tbody .companyConcept .container{
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+    .tbody .companyConcept dl{
+        width:95%;
+    }
+}
+
+.tbody .companyHonor{
+    width:100%;
+    padding:30px 0
+}
+.tbody .companyHonor h2{
+    margin:50px auto 40px;
+    font-size:36px;
+}
+.tbody .companyHonor img{
+    width:70%;
+    height:70%;
+}
+
+.tbody .aboutUs{
+    padding:60px 0;
+    background:#f5f5f5;
+}
+.tbody .aboutUs h2{
+    font-size:36px;
+    margin-bottom:50px;
+}
+.tbody .aboutUs div{
+    width:400px;
+    margin:0 auto;
+}
+.tbody .aboutUs div img{
+    width:100%;
+}
+.tbody .aboutUs p{
+    margin:20px 0 20px;
+}
+
+@media (max-width: 500px) {
+    .tbody .aboutUs div{
+        width:70%;
+        margin:0 auto;
+    }
+}
