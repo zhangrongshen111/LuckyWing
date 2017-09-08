@@ -54,13 +54,13 @@
             <ul class="gn-menu topMenu">
                 <div class="targetIcon"></div>
                 <li class="topItem open">
-                    <a href="index.jsp" class="top">
+                    <a href="${pageContext.request.contextPath}/redirect/toIndex" class="top">
                         <span class="listIcon fa fa-clock-o"></span>
                         <span>数据汇总</span>
                     </a>
                 </li>
                 <li class="topItem open">
-                    <a href="data.jsp" class="top">
+                    <a href="${pageContext.request.contextPath}/redirect/toData" class="top">
                         <span class="listIcon fa fa-th-large"></span>
                         <span>特别关注</span>
                     </a>

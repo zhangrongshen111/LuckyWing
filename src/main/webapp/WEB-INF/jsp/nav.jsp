@@ -28,7 +28,7 @@
                 <li><a href="${pageContext.request.contextPath}/redirect/toSoftware">无人机</a></li>
                 <li><a href="${pageContext.request.contextPath}/redirect/toSoftware">软件</a></li>
                 <li><a href="${pageContext.request.contextPath}/redirect/toAnalytics">数据分析</a></li>
-                <li><a href="${pageContext.request.contextPath}/redirect/toData">精准农林</a></li>
+                <li><a href="${pageContext.request.contextPath}/redirect/toIndex">精准农林</a></li>
                 <%--<li><a href="${pageContext.request.contextPath}industries.jsp">行业</a></li>--%>
                 <li><a href="${pageContext.request.contextPath}/redirect/toPAAF">图像识别</a></li>
                 <li><a href="${pageContext.request.contextPath}/redirect/toLogin">登陆</a></li>
@@ -40,7 +40,7 @@
                 <li><a href="${pageContext.request.contextPath}/redirect/toLancaster">无人机</a></li>
                 <li><a href="${pageContext.request.contextPath}/redirect/toSoftware">软件</a></li>
                 <li><a href="${pageContext.request.contextPath}/redirect/toAnalytics">数据分析</a></li>
-                <li><a href="${pageContext.request.contextPath}/redirect/toData">精准农林</a></li>
+                <li><a href="${pageContext.request.contextPath}/redirect/toIndex">精准农林</a></li>
                 <%--<li><a href="industries.jsp">行业</a></li>--%>
                 <li><a href="${pageContext.request.contextPath}/redirect/toPAAF">图像识别</a></li>
                 <li><a href="${pageContext.request.contextPath}/redirect/toLogin">登陆</a></li>
